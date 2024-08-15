@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    image: frontend:latest
+    ports:
+      - "80:80"
+    networks:
+      - custom-network
+
+  backend:
+    image: backend:latest
+    networks:
+      - custom-network
+    deploy:
+      replicas: 2
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      - custom-network
+networks:
+  custom-network:
+
