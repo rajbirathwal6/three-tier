@@ -1,3 +1,4 @@
+whoami
 cd frontend
 sudo chmod 666 /var/run/docker.sock
 docker build -t frontend .
