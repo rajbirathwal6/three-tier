@@ -5,4 +5,4 @@ docker build -t backend .
 cd ..
 docker-compose up -d
 docker ps
-
+docker ps -a
