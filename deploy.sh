@@ -1,5 +1,4 @@
-
-chmod 666 /var/run/docker.sock
+cd frontend
 docker build -t frontend .
 cd ../backend
 docker build -t backend .
